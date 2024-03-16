@@ -4,61 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/style.css">
-    <title>12345</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Кинотеатр под водой</title>
 </head>
 
 <body>
     <header class="above">
-        <div class="container">
-            <img class="Logotip" alt="Logotip" src="#">
-        <nav class="buttons_above>
-            <a class="buttons__item href="#"> кнопка 1 </a>
-            <a class="buttons__item href="#"> кнопка 2 </a>
-            <a class="buttons__item href="#"> кнопка 3 </a>
-          </nav>
+            <nav class="button_container">
+                <img class="logo" alt="logo" src="pics/logo.png">
+                <a class="button inline" href="#">Новости</a>
+                <a class="button inline" href="#">Афиша</a>
+                <a class="button inline" href="#">Покупка</a>
+            </nav>
     </header>
-
     <main class="middle">
+        <section class="news">
+            <h1>Новости</h1>
+            <div class="container">
+                <div class="left_block">
+                    <img class="first_level" alt="Nolan" src="pics/nolan.png">
+                    <div class="caption_first_level">
+                        <p>
+                            Нолан — гений (теперь официально),
+                        </p>
+                        <p>
+                            «Оппенгеймер» впереди всех.
+                        </p>
+                        <p>
+                            «Оскар-2024», как это было
+                        </p>
+                    </div>
+                </div>
+                <div class="right_block">
+                    <div class="content">
+                        <img class="second_level" alt="Bradly" src="pics/bradly.png">
+                        <div class="caption_second_level">
+                            <p>
+                                Брэдли Купер остался с носом, а Киллиан
+                            </p>
+                            <p>
+                                Мерфи наконец-то едет домой с наградой:
+                            </p>
+                            <p>
+                                победители «Оскара-2024»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img class="second_level" alt="Картинка" src="pics/truecrime.png">
+                        <div class="caption_second_level">
+                        <p>
+                            Как устроен «Настоящий детектив»?
+                        </p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="caption_second_level">
+                        <p>
+                            Почему Эмма Стоун получила оскар?
+                        </p>
+                        </div>
 
-        <section class="section_news">
-            <div class="big_block">
-                <h2> Новости <span> описаниеновостиописаниеновостиописаниеновостиописаниеновостиописаниеновостиописаниеновостиописаниеновости </span></h2>
-                <img class="content" alt="Картинка" src="#">
+                    </div>
+                    <img class="second_level" alt="Картинка" src="pics/emma.png">
+                    </div>
             </div>
-            <div class="small_block1">
-                <img class="content" alt="Картинка" src="#">
-                <h2> Текст </h2>
-            </div>
-            <div class="small_block2">
-                <img class="content" alt="Картинка" src="#">
-                <h2> Текст </h2>
-            </div>
-            <div class="small_block3">
-                <img class="content" alt="Картинка" src="#">
-                <h2> Текст </h2>
-            </div>
+    
+
         </section>
 
         <section class="section_afisha">
-            <h2> Афиша </h2>
+            <h1> Афиша </h1>
 
-            <div class="blocks_above">
+            <div class="grid">
+                <img class="" alt="Картинка" src="pics/posters/led3.png">
+                <img class="" alt="Картинка" src="pics/posters/adamAndEva.png">
+                <img class="" alt="Картинка" src="pics/posters/passenger.png">
+                <img class="content" alt="Картинка" src="pics/posters/MasterAndMargarita.png">
+                <img class="content" alt="Картинка" src="pics/posters/love.png">
+                <img class="content" alt="Картинка" src="pics/posters/onegin.png">
+            </div>
+            <div class="blocks_bottom">
+                <img class="content" alt="Картинка" src="#">
                 <img class="content" alt="Картинка" src="#">
                 <img class="content" alt="Картинка" src="#">
                 <img class="content" alt="Картинка" src="#">
             </div>
-                <div class="blocks_middle">
-                    <img class="content" alt="Картинка" src="#">
-                    <img class="content" alt="Картинка" src="#">
-                    <img class="content" alt="Картинка" src="#">
-                </div>
-                <div class="blocks_bottom">
-                    <img class="content" alt="Картинка" src="#">
-                    <img class="content" alt="Картинка" src="#">
-                    <img class="content" alt="Картинка" src="#">
-                    <img class="content" alt="Картинка" src="#">
-                </div>
 
         </section>
 
@@ -71,22 +102,24 @@
 
             <div class="buy_block"></div>
             <h2> Покупка билета </h2>
-            <div class="form">  <form action="/submit_form.php" method="post">
-                <label for="name">ФИО:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Почта:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="phone">Телефон:</label>
-                <input type="text" id="phone" name="phone" pattern="[0-9+ ]+" required>
-    
-                <label for="message">Комментарий:</label>
-                <textarea id="message" name="comment" rows="3"></textarea>
-    
-                <button type="submit">Отправить</button>
-                <button type="reset">Очистить</button>
-            </form> </div>
+            <div class="form">
+                <form action="/submit_form.php" method="post">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Почта:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="phone" name="phone" pattern="[0-9+ ]+" required>
+
+                    <label for="message">Комментарий:</label>
+                    <textarea id="message" name="comment" rows="3"></textarea>
+
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Очистить</button>
+                </form>
+            </div>
             </div>
 
         </section>
